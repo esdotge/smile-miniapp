@@ -1,0 +1,17 @@
+
+{
+  "name": "farcaster-smile-whitelist-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.30.0" 
+  },
+  "devDependencies": {
+    "vercel": "latest"
+  }
+}

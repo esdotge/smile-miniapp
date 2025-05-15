@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$SMILE Whitelist</title>
+    <style>
+        /* Estilos básicos para una apariencia agradable */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la ventana */
+            margin: 0;
+            background-color: #FFB000; /* Color de fondo principal (naranja-amarillo) */
+            color: #333; /* Color de texto por defecto para el body (oscuro) */
+            padding: 20px;
+            box-sizing: border-box; /* Para que el padding no aumente el tamaño total */
+            text-align: center;
+        }
+        .container {
+            background-color: black; /* Cambiado de white a black */
+            color: white; /* Texto dentro del contenedor será blanco por defecto */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 400px; /* Limita el ancho en pantallas grandes */
+            width: 100%; /* Ocupa el ancho disponible en móviles */
+        }
+        #app-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            border-radius: 16px; /* Esquinas redondeadas para el icono */
+        }
+        h1 {
+            font-size: 1.8em; /* Tamaño del título principal */
+            color: white; /* Cambiado de #2c3e50 a white para legibilidad sobre fondo negro */
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1em; /* Tamaño de párrafo estándar */
+            line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+            margin-bottom: 20px;
+            /* Heredará color: white; del .container */
+        }
+        #joinWhitelistButton {
+            background-color: #FFB000; /* Fondo del botón (naranja-amarillo) */
+            color: black; /* Cambiado de white a black */
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+            font-weight: bold;
+        }
+        #joinWhitelistButton:hover {
+            background-color: #FFB000; /* Mantenemos el mismo color de fondo en hover, podrías querer oscurecerlo un poco ej: #E09A00 */
+        }
+        #joinWhitelistButton:disabled {
+            background-color: #FFB000; /* Mantenemos el mismo color, considera un estilo diferente para deshabilitado ej: #D3D3D3 con texto #A9A9A9 */
+            cursor: not-allowed;
+        }
+        .message { /* Para mostrar mensajes de estado (si los añades de nuevo) */
+            margin-top: 20px;
+            font-size: 0.95em;
+            min-height: 20px; /* Para evitar saltos de layout cuando aparece/desaparece el mensaje */
+        }
+        .message.success {
+            color: #27ae60; /* Verde para mensajes de éxito */
+        }
+        .message.error {
+            color: #e74c3c; /* Rojo para mensajes de error */
+        }
+        .footer-note { /* Nota al pie (si la añades de nuevo) */
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #7f8c8d; /* Un gris suave */
+        }
+    </style>
+    </head>
+<body>
+    <div class="container">
+        <img src="/images/miniapp-icono.png" alt="Icono de $MILE" id="app-icon"
+             onerror="this.style.display='none';"> <h1>¡Welcome to $MILE!</h1>
+        <p>We're cooking up something big to spread smiles and $MILE tokens - be the first to know!</p>
+        <button id="joinWhitelistButton"> 🙂 ¡JOIN the Whitelist!</button>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
